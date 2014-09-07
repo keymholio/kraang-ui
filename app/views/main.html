@@ -20,11 +20,12 @@
       <div class="row">
         <div class="col-md-8">
           <div class="form-group">
-            <textarea class="form-control" placeholder="Enter a sentence..." rows="5"></textarea>
+            <textarea class="form-control" placeholder="Enter a sentence..." rows="5" ng-model="sentence"></textarea>
           </div>
         </div>
         <div class="col-md-4">
-          <input class="btn btn-lg btn-block btn-primary" type="submit" value="Talk like Kraang">
+          {{ results.kraang }}
+          <input class="btn btn-lg btn-block btn-primary" type="submit" value="Talk like Kraang" ng-click="talkKraang(sentence)">
         </div>
       </div>
     </div>

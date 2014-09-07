@@ -8,10 +8,12 @@
  * Controller of the kraangApp
  */
 angular.module('kraangApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, translate) {
+
+    $scope.talkKraang = function (sentence) {
+      translate.createSentence({ 'input_text': sentence })
+      .then(function (response) {
+        $scope.results = response.data;
+      });
+    };
   });

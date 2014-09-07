@@ -4,7 +4,7 @@
  * @ngdoc overview
  * @name kraangApp
  * @description
- * # kraangApp
+ * # The front end for kraang.io
  *
  * Main module of the application.
  */
@@ -24,4 +24,9 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+    // The following allows cross-domain calls
+  .config(['$httpProvider', function($httpProvider) {
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  }]);
