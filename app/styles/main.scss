@@ -1,0 +1,79 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$brand-primary: #DF08BE;
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$input-border-focus: $brand-primary;
+
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+header {
+  background-color: #312F91;
+  padding: 15px 20px;
+}
+
+.jumbo {
+  background: url('../images/jumbotron-bg.jpg');
+  background-size: cover;
+
+  h2 {
+    padding-top: 20%;
+    color: #fff;
+  }
+
+}
+
+.kraang {
+  display: block;
+  position: relative;
+  width: 85%;
+  margin: 15px auto 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+
+  .kraang__img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.form {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+
+  textarea {
+    width: 100%;
+  }
+}
+
+.about {
+  padding:50px 0;
+}
+
+footer {
+  padding:20px 0 50px;
+  color: lighten($gray, 45%);
+  background-color: #f2f2f2;
+}
+
+@media (max-width:991px){
+  .kraang {
+    width: 40%;
+    padding-bottom: 45%;
+  }
+}
+
+@media (max-width:480px){
+  .kraang {
+    width: 60%;
+    padding-bottom: 65%;
+  }
+}

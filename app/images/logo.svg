@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="157px" height="22px" viewBox="0 0 157 22" style="enable-background:new 0 0 157 22;" xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#FFFFFF;}
+]]>
+</style>
+<g>
+	<polygon class="st0" points="118.063,16.377 115.892,16.467 114.717,6.605 123.492,6.605 123.492,0 106.12,0 109.56,21.806
+		124.578,21.806 124.578,8.867 118.063,8.867 	"/>
+	<polygon class="st0" points="88.968,0 88.968,21.806 96.479,21.806 96.479,6.605 98.56,6.605 100.912,21.806 107.427,21.806
+		104.169,0 	"/>
+	<path class="st0" d="M69.515,0v21.806h6.515v-5.429h4.343l1.086,5.429h6.424L84.625,0H69.515z M76.606,10.902V6.605h1.551
+		l0.542,4.297H76.606z"/>
+	<path class="st0" d="M49.441,18.69l-4.496-8.095l2.106-3.986L46.993,0H25.229v21.763h9.068V6.259h3.276l-1.989,4.336l5.732,11.167
+		h7.664l-0.006,0.043h6.424l1.086-5.429h4.343v5.429h6.515V0h-15.11L49.441,18.69z M58.702,6.605h1.551v4.297H58.16L58.702,6.605z"
+		/>
+	<polygon class="st0" points="14.864,0.021 9.814,10.689 15.503,21.783 25.105,21.783 18.846,10.689 25.105,0.021 	"/>
+	<rect y="0.021" class="st0" width="8.819" height="21.762"/>
+	<rect x="126.171" y="16.277" class="st0" width="5.528" height="5.528"/>
+	<rect x="133.361" class="st0" width="6.515" height="21.806"/>
+	<path class="st0" d="M141.799,0v21.806H157V0H141.799z M150.456,16.277h-2.113V6.605h2.113V16.277z"/>
+</g>
+</svg>
