@@ -15,21 +15,33 @@
 </div>
 
 <div class="form">
-  <form>
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <div class="form-group">
-            <textarea class="form-control" placeholder="Enter a sentence..." rows="5" ng-model="sentence"></textarea>
+        <div class="col-md-12">
+          <div class="row" ng-hide="translating || results.kraang">
+            <div class="col-md-8">
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Enter a sentence..." rows="5" ng-model="sentence"></textarea>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <input class="btn btn-lg btn-block btn-primary" type="submit" value="Talk like Kraang" ng-click="talkKraang(sentence)">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          {{ results.kraang }}
-          <input class="btn btn-lg btn-block btn-primary" type="submit" value="Talk like Kraang" ng-click="talkKraang(sentence)">
+          <div class="col-md-12" ng-show="results.kraang">
+            <h3>{{ results.kraang }}</h3>
+            <br>
+            <a href="#" class="btn btn-lg btn-primary" ng-click="reset()">Again?</a>
+          </div>
+          <div class="col-md-12">
+            <div class="translating" ng-show="translating">
+              <img src="/images/kraang-symbol.svg" class="symbol-rotate pull-left">
+              <h3 class="pull-left">Translating...</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </form>
 </div>
 
 <div class="container">
