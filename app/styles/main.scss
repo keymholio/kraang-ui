@@ -119,4 +119,13 @@ footer {
     width: 60%;
     padding-bottom: 65%;
   }
+
+  .form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    textarea {
+      height: 5em;
+    }
+  }
 }
