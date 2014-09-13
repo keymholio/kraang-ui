@@ -11,12 +11,14 @@ angular.module('kraangApp')
   .controller('MainCtrl', function ($scope, translate) {
 
     $scope.talkKraang = function (sentence) {
-      $scope.translating = true;
-      translate.createSentence({ 'input_text': sentence })
-      .then(function (response) {
-        $scope.results = response.data;
-        $scope.translating = false;
-      });
+      if (sentence) {
+        $scope.translating = true;
+        translate.createSentence({ 'input_text': sentence })
+        .then(function (response) {
+          $scope.results = response.data;
+          $scope.translating = false;
+        });
+      }
     };
 
     $scope.reset = function () {
