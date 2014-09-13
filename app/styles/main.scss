@@ -30,9 +30,9 @@ header {
 .kraang {
   display: block;
   position: relative;
-  width: 85%;
+  width: 95%;
   margin: 15px auto 0;
-  padding-bottom: 100%;
+  padding-bottom: 105%;
   overflow: hidden;
   vertical-align: middle;
 
@@ -46,17 +46,22 @@ header {
 }
 
 .form {
-  background-color: #f2f2f2;
-  padding-top: 50px;
+  padding-top: 13%;
   padding-bottom: 50px;
 
   textarea {
     width: 100%;
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 }
 
 .about {
   padding:50px 0;
+
+  .btn {
+    margin-bottom: 8px;
+  }
 }
 
 footer {
@@ -66,6 +71,7 @@ footer {
 }
 
 .translating {
+  margin-top:22%;
   margin-left: auto;
   margin-right: auto;
   width: 250px;
@@ -76,6 +82,14 @@ footer {
     color: $brand-primary;
     margin-left: 15px;
   }
+}
+
+.results {
+  color: #fff;
+  max-height: 200px;
+  overflow-y: scroll;
+  line-height: 1.4em;
+  margin-top: 10%;
 }
 
 .symbol-rotate {
@@ -109,15 +123,53 @@ footer {
 
 @media (max-width:991px){
   .kraang {
-    width: 40%;
-    padding-bottom: 45%;
+    width: 110%;
+    padding-bottom: 130%;
+  }
+
+  .results {
+    font-size: 1.7em;
+    margin-top: 24px;
   }
 }
 
-@media (max-width:480px){
+@media (max-width:768px){
   .kraang {
-    width: 60%;
-    padding-bottom: 65%;
+    width: 40%;
+    padding-bottom: 45%;
+  }
+
+  .translating {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .results {
+    color: $gray;
+  }
+
+  .again {
+    margin-bottom: 24px;
+  }
+
+  .container-form {
+    background: #f2f2f2;
+    padding: 15px;
+  }
+
+  .container-kraang {
+    background: url('../images/jumbotron-bg.jpg');
+    background-size: cover;
+    padding-top: 15px;
+  }
+
+  .jumbo {
+    background: none;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .form {
@@ -127,5 +179,12 @@ footer {
     textarea {
       height: 5em;
     }
+  }
+}
+
+@media (max-width:480px){
+  .kraang {
+    width: 60%;
+    padding-bottom: 65%;
   }
 }
