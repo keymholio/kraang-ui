@@ -20,8 +20,8 @@ angular.module('kraangApp')
 
           /* jshint ignore:start */
           var speakSentence = response.data.kraang.replace(/kraang/gi, 'krang');
-          meSpeak.loadConfig("/scripts/lib/mespeak/mespeak_config.json");
-          meSpeak.loadVoice('/scripts/lib/mespeak/en-us.json');
+          meSpeak.loadConfig("/json/mespeak_config.json");
+          meSpeak.loadVoice('/json/en-us.json');
           meSpeak.speak(speakSentence, { variant: 'm2', pitch: 30 });
           /* jshint ignore:end */
           $scope.translating = false;
