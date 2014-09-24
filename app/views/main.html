@@ -13,7 +13,7 @@
       <div class="col-sm-8">
           <div class="form" ng-hide="translating || results.kraang">
             <textarea class="form-control" placeholder="Enter a sentence..." rows="3" ng-model="sentence"></textarea>
-            <input class="btn btn-lg btn-block btn-primary" type="submit" value="Talk like Kraang" ng-click="talkKraang(sentence)">
+            <input class="btn btn-lg btn-block btn-primary" type="submit" value="Talk like Kraang" ng-click="talkKraang(sentence, consecutive)">
           </div>
           <div class="translating" ng-show="translating">
             <img src="/images/kraang-symbol.svg" class="symbol-rotate pull-left">
@@ -21,15 +21,13 @@
           </div>
           <div class="col-md-12" ng-show="results.kraang">
             <h3 class="results">{{ results.kraang }}</h3>
-            <a href="#" class="btn btn-lg btn-primary again" ng-click="reset()">Again?</a>
+            <a href class="btn btn-lg btn-primary again" ng-click="again()">Again?</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<div id="audio"></div>
 
 <div class="container">
   <div class="about">
